@@ -31,7 +31,7 @@ public class Main {
                 default:
                     break;
             }
-            round ++;
+            round++;
         }
         scanner.close();
     }
@@ -88,7 +88,7 @@ public class Main {
             }
         }
 
-        while (answer < 0 || answer > 7 || zero || one || two || three || four || five || six) {
+        while (answer < 0 || answer > 7 || (zero && answer == 1) || (one && answer == 2) || (two && answer == 3) || (three && answer == 4) || (four && answer == 5) || (five && answer == 6) || (six && answer == 7)) {
             System.out.println("Fail please enter a valid number");
             while (!scanner.hasNextInt()) {
                 System.out.println("Please select a number 1-6");
